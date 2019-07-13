@@ -22,7 +22,7 @@ function sendData(device = false, hexData = false) {
     device.sendData(hexDataBuffer);
 }
 
-module.exports = (commands, learnEnabled = false) => {
+module.exports = (commands, learnEnabled = true) => {
     /* Server */
     let app = express();
 
